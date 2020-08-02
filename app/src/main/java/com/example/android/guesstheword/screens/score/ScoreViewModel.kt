@@ -28,6 +28,9 @@ class ScoreViewModel(finalScore: Int) : ViewModel() {
     var score = finalScore
 
     init {
+        word.value = ""
+        score.value = 0
+
         Log.i("ScoreViewModel", "Final score is $finalScore")
     }
 }
